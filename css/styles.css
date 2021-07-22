@@ -18,6 +18,13 @@
   color: var(--title-text-color);
 
 }
+.container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .website{
   color: var(--accent-color) ;
   font-family: Raleway;
@@ -254,6 +261,13 @@
 /* Стили для.portfolio */
 .body-portfolio{
  background-color: var(--hero-text-color);
+}
+.container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hidden-title{
   display: none;
