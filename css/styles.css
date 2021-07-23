@@ -36,7 +36,6 @@
 
 }
 .page-header{
-  display: flex;
   outline: 1px solid black;
 }
 
@@ -52,15 +51,21 @@
 .logo-link{
   text-decoration: none;
 }
-
-
 .list{
  list-style: none;
 }
-
+.site-nav{
+  display: flex;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
 
 .site-nav .link{
- display: flex;
+ display: block;
+ padding-top: 32px;
+ padding-bottom: 32px;
+
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: 500;
@@ -76,6 +81,7 @@
 .link.current{
   color: var(--accent-color);
 }
+
 .contact-link{
  color: var(--feature-text-color);
  font-family: Roboto;
