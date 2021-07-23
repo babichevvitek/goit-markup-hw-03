@@ -25,6 +25,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 .website{
   color: var(--accent-color) ;
   font-family: Raleway;
@@ -33,6 +34,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
+}
+.page-header{
+  display: flex;
+  outline: 1px solid black;
 }
 
 
@@ -53,7 +58,9 @@
  list-style: none;
 }
 
+
 .site-nav .link{
+ display: flex;
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: 500;
@@ -61,7 +68,6 @@
  line-height: 1.14;
  letter-spacing: 0.02em;
 }
-
 
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -94,29 +100,39 @@
         /* Hero */
 
 .hero{
- color: var(--hero-text-color);
- background: var(--box-text-color);
- font-family: Roboto;
- font-weight: 900;
- font-size: 44px;
- line-height: 1.36;
- text-align: center;
- letter-spacing: 0.06em;
- text-transform: uppercase; 
+  text-align: center;
+  outline: 1px solid red;
+  background: var(--box-text-color);
+}
+
+.hero-title{
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--hero-text-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; 
 }
 
 .button{
+  display:inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
  color: var(--hero-text-color);
  background-color:var(--accent-color);
- display:inline-block;
+ 
  font-family: Roboto;
  font-weight: bold;
  font-size: 16px;
  line-height: 1.87;
  cursor: pointer;
- display: flex;
  align-items: center;
- text-align: center;
  letter-spacing: 0.06em;
  
 }
@@ -124,7 +140,16 @@
  background-color:var(--button-text-color);
     
 }  
+.section{
+  outline: 1px solid red;
+ 
+}
+ 
+
 .section-title{
+ margin-top: 0;
+ margin-bottom: 10px;
+
  color: var(--title-text-color) ;
  font-family: Roboto;
  font-weight: bold;
@@ -134,6 +159,7 @@
  text-transform: uppercase;
 } 
 .section-feature{
+  margin-top: 0;
  color: var(--feature-text-color)
  font-family: Roboto;
  font-size: 14px;
@@ -143,27 +169,42 @@
 .section-list{
   list-style: none;
 }
-      /* Что мы делаем */
+      /* Что мы делаем */ 
 
+.working{
+  outline: 1px solid red;
+}    
 .work{
- color: var(--title-text-color);
- font-family: Roboto;
- font-weight: bold;
- font-size: 36px;
- line-height: 1.16;
- text-align: center;
- letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .work-list{
+  display: flex;
  list-style: none;
 }
+
 .the-best{
   background: var(--fon-text-color);
 }
 
 /* Наша команда */
+
+.the-best{
+  outline: 1px solid black;
+}
 .team{
+  margin-top: 0;
+  margin-bottom: 50px;
+
  color: var(--title-text-color);
  background: var(--fon-text-color);
  font-family: Roboto;
@@ -175,6 +216,9 @@
 }
 
 .team-list{
+  margin-top: 0;
+  margin-bottom: 10px;
+
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: 500;
@@ -191,7 +235,8 @@
  text-align: center;
  letter-spacing: 0.03em;
 }
-.team-professionals list{
+.team-professionals-list{
+  display: flex;
   background: var(--fon-text-color);
   list-style: none;
 }
@@ -274,13 +319,17 @@
 }
 
 .buttons-list{
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 22px;
+
  color: var(--title-text-color);
  font-family: Roboto;
+
  font-weight: 500;
  font-size: 16px;
  line-height: 1.85;
  cursor: pointer;
- text-align: center;
  letter-spacing: 0.03em;
 }
 
@@ -304,6 +353,9 @@
 }
 
 .decoration{
+  margin-top: 0;
+  margin-bottom: 4px;
+
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: bold;
@@ -313,6 +365,7 @@
 }
 
 .decoration-text{
+  margin-top: 0;
  color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 16px;
