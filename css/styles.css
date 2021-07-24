@@ -11,8 +11,16 @@
  --box-text-color:#2F303A;
 }
 
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .body-studio{
-  font-family:"Raleway",sans-serif;
   font-family:"Roboto",sans-serif;
   background-color: var(--hero-text-color);
   color: var(--title-text-color);
@@ -24,7 +32,19 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid blue;
+
 }
+
+.page-header{
+  outline: 1px solid black;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .website{
   color: var(--accent-color) ;
@@ -35,12 +55,10 @@
   letter-spacing: 0.03em;
 
 }
-.page-header{
-  outline: 1px solid black;
-}
 
 
 .logo-link{
+ 
   color: var(--primary-text-color);
   font-family: Raleway;
   font-weight: bold;
@@ -56,9 +74,16 @@
 }
 .site-nav{
   display: flex;
+  margin-left: 93px;
 }
 .site-nav .item {
   margin-right: 50px;
+}
+.site-nav .item:last-child{
+  margin-right: 0;
+}
+.site-nav .item + .item{
+  margin-left: 50px;
 }
 
 .site-nav .link{
@@ -67,6 +92,7 @@
  padding-bottom: 32px;
 
  color: var(--title-text-color);
+
  font-family: Roboto;
  font-weight: 500;
  font-size: 14px;
@@ -81,8 +107,28 @@
 .link.current{
   color: var(--accent-color);
 }
+.contact-list{
+  display: flex;
+  margin-left: auto;
+
+}
+
+.contact .item + .item{
+  margin-left: 50px;
+}
+.contact .list{
+  padding-left: 0;
+  display: block;
+}
+.contact-list .item{
+  margin-left: 50px;
+}
 
 .contact-link{
+ display: block;
+ padding-top: 32px;
+ padding-bottom: 32px;
+
  color: var(--feature-text-color);
  font-family: Roboto;
  font-weight: 500;
@@ -106,17 +152,26 @@
         /* Hero */
 
 .hero{
-  text-align: center;
   outline: 1px solid red;
   background: var(--box-text-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
+
 }
 
-.hero-title{
+
+.center-hero {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  }
+  
+  .hero-title{
   margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--hero-text-color);
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -148,9 +203,24 @@
 }  
 .section{
   outline: 1px solid red;
- 
+  
 }
- 
+.section-list{
+  display: flex;
+  outline: 1px solid orange;
+
+}
+
+.one{
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 0;
+  width: 270px;
+
+}
+.one:not(:last-child) {
+  margin-right: 30px;
+}
 
 .section-title{
  margin-top: 0;
@@ -166,7 +236,7 @@
 } 
 .section-feature{
   margin-top: 0;
- color: var(--feature-text-color)
+ color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 14px;
  line-height: 1.17;
@@ -183,7 +253,7 @@
 .work{
   margin-top: 0;
   margin-bottom: 50px;
-
+  outline: 1px solid red;
   color: var(--title-text-color);
   font-family: Roboto;
   font-weight: bold;
@@ -194,8 +264,13 @@
 }
 
 .work-list{
-  display: flex;
+ display: flex;
  list-style: none;
+}
+.photo{
+  margin-left: 0;
+  margin-right: 30px;
+  
 }
 
 .the-best{
@@ -234,6 +309,8 @@
  letter-spacing: 0.03em;
 }
 .profession{
+  margin-top: 0;
+
  color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 16px;
@@ -243,11 +320,24 @@
 }
 .team-professionals-list{
   display: flex;
+ 
+
   background: var(--fon-text-color);
   list-style: none;
 }
+.workers{
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+.workers:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 .footer-link{
+  margin-top: 60px;
+  margin-bottom: 20px;
+ 
  color: var(--hero-text-color);
  font-family: Raleway;
  font-weight: bold;
@@ -271,8 +361,15 @@
     /* Адрес сайта */
 
 .rots{
-  background-color: #2F303A;
+  
+ background-color: #2F303A;
 }
+.destination{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+
 .address-street{
  color:  var(--hero-text-color);
  font-family: Roboto;
@@ -282,6 +379,10 @@
  letter-spacing: 0.03em;
 }
 
+.kiev{
+  padding-top: 0;
+  padding-bottom: 9px;
+}
 
 
 .address-street-list{
@@ -313,13 +414,7 @@
 .body-portfolio{
  background-color: var(--hero-text-color);
 }
-.container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .hidden-title{
   display: none;
 }
