@@ -74,6 +74,7 @@ ul,p {
 
 .site-nav .item {
   margin-right: 50px;
+  
 }
 .site-nav .item:last-child{
   margin-right: 0;
@@ -81,6 +82,7 @@ ul,p {
 
 .site-nav .item + .item{
   margin-left: 50px;
+  margin-left: 0;
 }
 
 .site-nav .link{
@@ -148,14 +150,18 @@ ul,p {
         /* Hero */
 
 .hero{
- 
   background: var(--box-text-color);
-  padding-top: 200px;
-  padding-bottom: 280px;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 94px;
+  
 }
 
 .center-hero {
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 696px;
@@ -176,6 +182,7 @@ ul,p {
 .button{
   display:inline-block;
   border-radius: 4px;
+  border-color: transparent;
   padding: 10px 32px;
   min-width: 200px;
 
@@ -194,24 +201,28 @@ ul,p {
 .button:hover{
   background-color:var(--button-text-color);   
 }  
+.section{
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 
 .section-list{
   display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .one{
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 270px;
-
 }
+
 .one:not(:last-child) {
   margin-right: 30px;
 }
 
 .section-title{
-  padding-top: 0;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color) ;
   font-family: Roboto;
   font-weight: bold;
@@ -222,8 +233,8 @@ ul,p {
 } 
 
 .section-feature{
- padding-top: 0;
- padding-bottom: 30px;
+ margin-top: 0;
+ margin-bottom: 0;
  color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 14px;
@@ -235,17 +246,20 @@ ul,p {
   list-style: none;
 }
       /* Что мы делаем */ 
-
+.working{
+  margin-top: 0;
+  margin-bottom: 94px;
+ 
+}
     
 .work{
- padding-top: 0;
- padding-bottom: 50px;
+margin-top: 0;
+margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-family: Roboto;
 
-  font-weight: bold;
-  font-size: 36px;
+  font-weight: bold;  font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -277,6 +291,7 @@ ul,p {
  padding-top: 94px;
  padding-bottom: 50px;
 
+
  color: var(--title-text-color);
  background: var(--fon-text-color);
  font-family: Roboto;
@@ -286,11 +301,14 @@ ul,p {
  text-align: center;
  letter-spacing: 0.03em;
 }
+.people{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-list{
- padding-top: 30px;
- padding-bottom: 10px;
-
+ margin-top: 0;
+ margin-bottom: 10px;
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: 500;
@@ -300,9 +318,6 @@ ul,p {
  letter-spacing: 0.03em;
 }
 .profession{
- padding-top: 0;
- padding-bottom: 30px;
-
  color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 16px;
@@ -312,14 +327,15 @@ ul,p {
 }
 .team-professionals-list{
   display: flex;
+  padding-top: 0;
+  padding-bottom: 94px;
  
   background: var(--fon-text-color);
   list-style: none;
 }
 
+
 .workers{
-  margin-top: 0;
-  margin-bottom: 94px;
   background-color: var(--hero-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -373,11 +389,21 @@ ul,p {
  line-height: 1.71;
  letter-spacing: 0.03em;
 }
+.flor{
+  padding-top: 0;
+  padding-bottom: 60px;
+}
 
 .kiev{
-  padding-top: 0;
-  padding-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
+
+.kiev:last-child{
+  margin-bottom: 0;
+}
+
+
 
 .address-street-list{
   list-style: none;
@@ -408,9 +434,17 @@ ul,p {
 .body-portfolio{
  background-color: var(--hero-text-color);
 } 
+.page-header{
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .page-header {                                                                                       
   border-bottom: 1px solid #ECECEC;
 } 
+.main{
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 
 .hidden-title{
   display: none;
@@ -420,6 +454,7 @@ ul,p {
   border-radius: 4px;
   text-align: center;
   padding: 6px 22px;
+  border-color: transparent;
 
  color: var(--title-text-color);
  font-family: Roboto;
@@ -432,8 +467,8 @@ ul,p {
 }
 .site-buttons.list{
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 50px;
+ padding-top: 0;
+ padding-bottom: 34px;
   justify-content: center;
 }
 
@@ -452,34 +487,54 @@ ul,p {
 }
 
 .pictures{
+  
   display: flex;
   flex-wrap: wrap;
+ 
 }
 
+ 
+
 .design{
-  margin-right: 30px;
-  margin-top: 34px;
-  margin-bottom: 30px;
+ margin-right: 30px;
+ margin-bottom: 30px;
+ box-sizing: border-box;
+ width: 370px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+    
+ } 
+.signature{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
 }
 
 .design:nth-child(3n) {
-margin-right: 0;
-}
+  margin-right: 0;
+  }
 
 .design:nth-child(n + 7) {
- margin-bottom: 94px;
-}
-.design:nth-child(n + 4) {
-  margin-top: 0;
+ margin-bottom: 0;
 }
 
+
 .design:nth-child(-n + 3) {
-  margin-top: 34px;
+margin-top: 0;
 }
+
+
 
 .site-nav.link.current{
  color: var(--accent-color);
 }
+
 
 .picture-list{
  list-style: none;
@@ -490,9 +545,8 @@ margin-right: 0;
 }
 
 .decoration{
-  padding-top: 20px;
-  padding-bottom: 4px;
-
+ margin-top: 0;
+ margin-bottom: 4px;
  color: var(--title-text-color);
  font-family: Roboto;
  font-weight: bold;
@@ -502,7 +556,6 @@ margin-right: 0;
 }
 
 .decoration-text{
-  margin-top: 0;
  color: var(--feature-text-color);
  font-family: Roboto;
  font-size: 16px;
