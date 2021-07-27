@@ -465,8 +465,8 @@ margin-bottom: 50px;
 }
 .site-buttons.list{
   display: flex;
- padding-top: 0;
- padding-bottom: 34px;
+  margin-top: 0;
+  margin-bottom: 34px;
   justify-content: center;
 }
 
